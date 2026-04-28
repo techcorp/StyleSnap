@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#7c3aed" />
+  <title>Privacy Policy · StyleSnap</title>
+  <meta name="description" content="StyleSnap privacy policy — how the app handles your photos, preferences, and advertising data." />
+  <link rel="icon" type="image/png" href="/icon.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg-1: #faf8ff;
+      --bg-2: #f5f3ff;
+      --ink: #0f172a;
+      --ink-soft: #475569;
+      --ink-mute: #64748b;
+      --line: rgba(99, 102, 241, 0.14);
+      --brand: #7c3aed;
+      --brand-2: #6366f1;
+      --brand-3: #d946ef;
+      --card: rgba(255, 255, 255, 0.72);
+      --card-border: rgba(255, 255, 255, 0.85);
+      --pill: rgba(124, 58, 237, 0.08);
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; }
+    body {
+      font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+      color: var(--ink);
+      line-height: 1.65;
+      font-weight: 400;
+      background:
+        radial-gradient(1200px 600px at 110% -10%, rgba(217, 70, 239, 0.18), transparent 60%),
+        radial-gradient(900px 700px at -10% 10%, rgba(124, 58, 237, 0.18), transparent 55%),
+        linear-gradient(180deg, var(--bg-1), var(--bg-2));
+      min-height: 100vh;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+    .wrap { max-width: 820px; margin: 0 auto; padding: 56px 22px 80px; }
+    header.brand { display: flex; align-items: center; gap: 12px; margin-bottom: 36px; }
+    .logo {
+      width: 44px; height: 44px; border-radius: 12px;
+      background: linear-gradient(135deg, var(--brand), var(--brand-2));
+      display: grid; place-items: center;
+      box-shadow: 0 10px 30px rgba(124, 58, 237, 0.35), inset 0 -6px 14px rgba(0,0,0,0.12);
+      color: #fff; font-family: 'Playfair Display', serif; font-weight: 600; font-style: italic; font-size: 22px;
+    }
+    .brand-name { font-family: 'Playfair Display', serif; font-size: 22px; font-weight: 600; letter-spacing: -0.01em; }
+    .brand-tag { color: var(--ink-mute); font-size: 12px; letter-spacing: 0.18em; text-transform: uppercase; margin-top: 2px; }
+    .eyebrow {
+      display: inline-flex; align-items: center; gap: 8px;
+      padding: 6px 12px; border-radius: 999px;
+      background: var(--pill); color: var(--brand);
+      font-size: 11px; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase;
+      border: 1px solid rgba(124, 58, 237, 0.15);
+    }
+    .eyebrow::before {
+      content: ""; width: 6px; height: 6px; border-radius: 50%;
+      background: var(--brand); box-shadow: 0 0 0 4px rgba(124, 58, 237, 0.18);
+    }
+    h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(32px, 5.4vw, 48px);
+      font-weight: 600; line-height: 1.08;
+      letter-spacing: -0.02em; margin: 18px 0 14px;
+    }
+    h1 em { font-style: italic;
+      background: linear-gradient(90deg, var(--brand), var(--brand-3), var(--brand-2));
+      -webkit-background-clip: text; background-clip: text; color: transparent;
+    }
+    .lead { color: var(--ink-soft); font-size: 16px; max-width: 62ch; }
+    .meta { display: flex; flex-wrap: wrap; gap: 12px 22px; margin: 22px 0 8px; color: var(--ink-mute); font-size: 13px; }
+    .meta span strong { color: var(--ink); font-weight: 600; }
+    .card {
+      margin-top: 32px; padding: 28px 26px; border-radius: 22px;
+      background: var(--card); border: 1px solid var(--card-border);
+      backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px);
+      box-shadow: 0 8px 30px rgba(15, 23, 42, 0.04);
+    }
+    h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 22px; font-weight: 600; letter-spacing: -0.01em;
+      margin: 0 0 6px; color: var(--ink);
+    }
+    h2 .num { color: var(--brand); font-style: italic; margin-right: 10px; font-weight: 500; }
+    h3 { font-size: 14px; font-weight: 600; margin: 18px 0 6px; color: var(--ink); letter-spacing: -0.005em; }
+    p { margin: 8px 0; color: var(--ink-soft); }
+    ul { padding-left: 20px; margin: 8px 0; color: var(--ink-soft); }
+    li { margin: 6px 0; }
+    li strong { color: var(--ink); font-weight: 600; }
+    code, .mono {
+      font-family: ui-monospace, SF Mono, Menlo, Consolas, monospace;
+      font-size: 0.92em; background: rgba(124, 58, 237, 0.08);
+      padding: 2px 7px; border-radius: 6px; color: var(--brand);
+    }
+    a { color: var(--brand); text-decoration: none; border-bottom: 1px solid rgba(124, 58, 237, 0.3); }
+    a:hover { border-bottom-color: var(--brand); }
+    .toc { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 10px 18px; }
+    .toc a { color: var(--ink); border: none; font-size: 14px; padding: 8px 12px; border-radius: 10px; transition: background 0.18s; display: flex; gap: 10px; }
+    .toc a:hover { background: rgba(124, 58, 237, 0.06); }
+    .toc a span:first-child { color: var(--brand); font-variant-numeric: tabular-nums; font-weight: 600; min-width: 18px; }
+    .callout {
+      margin: 14px 0; padding: 14px 16px; border-radius: 14px;
+      background: linear-gradient(135deg, rgba(124, 58, 237, 0.06), rgba(99, 102, 241, 0.05));
+      border: 1px solid rgba(124, 58, 237, 0.12);
+      font-size: 14px; color: var(--ink-soft);
+    }
+    .callout strong { color: var(--ink); }
+    footer.note {
+      margin-top: 40px; padding-top: 24px; border-top: 1px solid var(--line);
+      color: var(--ink-mute); font-size: 13px; text-align: center;
+    }
+    @media (max-width: 480px) {
+      .wrap { padding: 36px 16px 60px; }
+      .card { padding: 22px 18px; border-radius: 18px; }
+      h1 { font-size: 30px; }
+      h2 { font-size: 19px; }
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <header class="brand">
+      <div class="logo">S</div>
+      <div>
+        <div class="brand-name">StyleSnap</div>
+        <div class="brand-tag">AI Personal Stylist</div>
+      </div>
+    </header>
+
+    <span class="eyebrow">Privacy Policy</span>
+    <h1>How <em>your data</em> is handled.</h1>
+    <p class="lead">
+      StyleSnap is built to give you editorial-quality styling advice without holding onto your personal information.
+      This page explains, in plain language, exactly what the app sees, where it goes, and how long it stays.
+    </p>
+
+    <div class="meta">
+      <span><strong>Effective:</strong> 28 April 2026</span>
+      <span><strong>Last updated:</strong> 28 April 2026</span>
+      <span><strong>App:</strong> StyleSnap (com.stylesnapai.app)</span>
+    </div>
+
+
+    <section class="card" aria-label="Table of contents">
+      <h2><span class="num">00</span>Contents</h2>
+      <nav class="toc">
+        <a href="#who"><span>01</span><span>Who we are</span></a>
+        <a href="#data"><span>02</span><span>What data we handle</span></a>
+        <a href="#photos"><span>03</span><span>How your photos are used</span></a>
+        <a href="#local"><span>04</span><span>Stored on your device</span></a>
+        <a href="#ads"><span>05</span><span>Advertising &amp; AdMob</span></a>
+        <a href="#third"><span>06</span><span>Third-party services</span></a>
+        <a href="#retention"><span>07</span><span>Retention &amp; deletion</span></a>
+        <a href="#children"><span>08</span><span>Children's privacy</span></a>
+        <a href="#rights"><span>09</span><span>Your rights</span></a>
+        <a href="#security"><span>10</span><span>Security</span></a>
+        <a href="#changes"><span>11</span><span>Changes to this policy</span></a>
+        <a href="#contact"><span>12</span><span>Contact</span></a>
+      </nav>
+    </section>
+
+    <section class="card" id="who">
+      <h2><span class="num">01</span>Who we are</h2>
+      <p>
+        StyleSnap (the &ldquo;app&rdquo;) is an AI-powered personal styling assistant for Android. The app is published
+        under the package name <code>com.stylesnapai.app</code> and is referred to in this policy as &ldquo;we&rdquo;,
+        &ldquo;us&rdquo;, or &ldquo;StyleSnap&rdquo;. By installing or using the app you agree to the practices described below.
+      </p>
+    </section>
+
+    <section class="card" id="data">
+      <h2><span class="num">02</span>What data we handle</h2>
+      <p>StyleSnap is designed to collect as little as possible. The categories below cover everything the app touches.</p>
+      <h3>Photos and images you choose</h3>
+      <ul>
+        <li><strong>Outfit photos</strong> you capture or select from your gallery for analysis or comparison.</li>
+        <li><strong>Closet entries</strong> you save inside the app for future reference.</li>
+      </ul>
+      <h3>Information you provide</h3>
+      <ul>
+        <li><strong>Style preferences</strong> (occasion, vibe, body-type hints) entered into the input form.</li>
+        <li><strong>Optional notes or tags</strong> you attach to saved looks.</li>
+      </ul>
+      <h3>Information generated by the app</h3>
+      <ul>
+        <li><strong>AI-generated style readouts, scores, and tips</strong> produced for your photos.</li>
+        <li><strong>Daily usage counters</strong> (number of analyses, ad cooldown timers) used to enforce free-tier limits.</li>
+      </ul>
+      <h3>Information collected automatically by advertising partners</h3>
+      <ul>
+        <li><strong>Advertising identifier</strong> (Android Advertising ID), <strong>device and network information</strong>,
+          and <strong>approximate location</strong> may be processed by Google AdMob to serve and measure ads.
+          See section&nbsp;05 for details and opt-out.</li>
+      </ul>
+      <p class="callout">
+        <strong>What we do not collect:</strong> we do not ask for your name, email, phone number, contacts, calendar,
+        precise GPS location, microphone, or browsing history. The app has no user account system.
+      </p>
+    </section>
+
+    <section class="card" id="photos">
+      <h2><span class="num">03</span>How your photos are used</h2>
+      <p>
+        When you ask StyleSnap to analyze an outfit, the selected image is sent over an encrypted HTTPS connection to our
+        styling server, which runs an open-source vision-language model (Ollama / LLaVA) on infrastructure we operate.
+        The server processes the image in memory only to generate the style readout you see in the app, then returns the
+        result to your device.
+      </p>
+      <ul>
+        <li>Images are <strong>not used to train any AI model</strong>.</li>
+        <li>Images are <strong>not shared with advertisers, brokers, or third parties</strong>.</li>
+        <li>Images are <strong>not retained on the server after the response is sent</strong>; only short-lived,
+          rotating diagnostic logs (HTTP status codes, latency, error messages — no image content) may exist for
+          troubleshooting and are purged automatically.</li>
+      </ul>
+      <p class="callout">
+        If you choose to <strong>save an analyzed look to your closet</strong>, the photo and its style readout are stored
+        <em>locally on your device</em> only — they are not uploaded anywhere else.
+      </p>
+    </section>
+
+    <section class="card" id="local">
+      <h2><span class="num">04</span>Stored on your device</h2>
+      <p>The following items live in the app's private storage on your phone and never leave it unless you explicitly export them:</p>
+      <ul>
+        <li>Your closet entries (photos + AI readouts).</li>
+        <li>Your daily-tip preference and last-shown date.</li>
+        <li>Today's analysis credits and ad cooldown timer.</li>
+        <li>Theme preference (light / dark) and other UI settings.</li>
+      </ul>
+      <p>You can clear all of this at any time by uninstalling the app or by clearing app data from Android Settings.</p>
+    </section>
+
+    <section class="card" id="ads">
+      <h2><span class="num">05</span>Advertising &amp; AdMob</h2>
+      <p>
+        StyleSnap is free to use and is supported by ads served through <strong>Google AdMob</strong>. Ads are shown
+        between analyses, with a daily cap and cooldown to keep the experience light. The first analysis of each session
+        is always ad-free.
+      </p>
+      <p>AdMob may collect and process the following to deliver and measure ads:</p>
+      <ul>
+        <li>Android Advertising ID (a resettable identifier).</li>
+        <li>Device information (model, OS version, language, screen size).</li>
+        <li>General network information (IP-based coarse location, mobile carrier).</li>
+        <li>Ad interaction events (impressions, clicks, completions).</li>
+      </ul>
+      <p>
+        AdMob's processing is governed by Google's privacy policies. To learn more or to opt out of personalized ads:
+      </p>
+      <ul>
+        <li><a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">How Google uses information from sites or apps that use our services</a></li>
+        <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a></li>
+        <li>On Android: <strong>Settings &rarr; Privacy &rarr; Ads</strong> to reset or delete your Advertising ID and opt out of personalized ads.</li>
+      </ul>
+    </section>
+
+    <section class="card" id="third">
+      <h2><span class="num">06</span>Third-party services</h2>
+      <p>StyleSnap relies on the following third parties. Each is used only for the purpose described.</p>
+      <ul>
+        <li><strong>Google AdMob</strong> &mdash; in-app advertising. See section&nbsp;05.</li>
+        <li><strong>Google Play Services</strong> &mdash; required Android infrastructure (Play Integrity, ads SDK, crash reporting via Play).</li>
+        <li><strong>Google Fonts</strong> &mdash; web fonts served on this privacy page (not used inside the app itself).</li>
+      </ul>
+      <p>
+        We do not sell your data to any third party, and we do not engage in cross-app or cross-site tracking outside
+        the AdMob integration described above.
+      </p>
+    </section>
+
+    <section class="card" id="retention">
+      <h2><span class="num">07</span>Retention &amp; deletion</h2>
+      <ul>
+        <li><strong>Photos sent for analysis</strong> &mdash; held in server memory only for the duration of the request, then discarded.</li>
+        <li><strong>Diagnostic server logs</strong> &mdash; rotated and deleted automatically within 14 days; never contain image content.</li>
+        <li><strong>On-device data</strong> (closet, settings, counters) &mdash; kept until you clear app data or uninstall the app.</li>
+        <li><strong>AdMob data</strong> &mdash; retained per Google's policies; you can reset your Advertising ID at any time from Android Settings.</li>
+      </ul>
+      <p>
+        Because StyleSnap has no account system, deleting the app from your device is sufficient to remove all data
+        we hold about you on that device.
+      </p>
+    </section>
+
+    <section class="card" id="children">
+      <h2><span class="num">08</span>Children's privacy</h2>
+      <p>
+        StyleSnap is intended for users <strong>13 years of age or older</strong>. We do not knowingly collect data from
+        children under 13. If you believe a child under 13 has used the app, please contact us (section&nbsp;12) and we
+        will take reasonable steps to delete any associated data.
+      </p>
+    </section>
+
+    <section class="card" id="rights">
+      <h2><span class="num">09</span>Your rights</h2>
+      <p>
+        Depending on where you live, you may have rights under laws such as the <strong>GDPR</strong> (EU/UK),
+        <strong>CCPA / CPRA</strong> (California), or <strong>DPDP Act</strong> (India), including the right to access,
+        correct, or delete data we hold about you, and to object to certain processing.
+      </p>
+      <ul>
+        <li><strong>Access &amp; deletion of on-device data</strong> &mdash; available directly in the app or by clearing app data in Android Settings.</li>
+        <li><strong>Personalised ads</strong> &mdash; you may opt out via <em>Settings &rarr; Privacy &rarr; Ads</em> on Android.</li>
+        <li><strong>Other requests</strong> &mdash; email us at the address in section&nbsp;12 and we will respond within 30 days.</li>
+      </ul>
+    </section>
+
+    <section class="card" id="security">
+      <h2><span class="num">10</span>Security</h2>
+      <p>
+        We use industry-standard practices to protect data in transit and at rest:
+      </p>
+      <ul>
+        <li><strong>HTTPS/TLS</strong> for every network request between the app and our styling server.</li>
+        <li><strong>Sandboxed app storage</strong> on Android, so on-device data is isolated from other apps.</li>
+        <li><strong>Code obfuscation and integrity checks</strong> (R8 minification, Play Integrity) on release builds.</li>
+      </ul>
+      <p>
+        No system is perfectly secure. If you suspect a vulnerability, please report it via the contact details below
+        so we can investigate promptly.
+      </p>
+    </section>
+
+    <section class="card" id="changes">
+      <h2><span class="num">11</span>Changes to this policy</h2>
+      <p>
+        We may update this policy from time to time to reflect new features, legal requirements, or operational changes.
+        The &ldquo;Last updated&rdquo; date at the top of the page will always show the most recent revision. Material
+        changes will be highlighted in the app on first launch after the change takes effect.
+      </p>
+    </section>
+
+    <section class="card" id="contact">
+      <h2><span class="num">12</span>Contact</h2>
+      <p>If you have any questions, requests, or concerns about this policy or your data, reach out at:</p>
+      <ul>
+        <li><strong>Email:</strong> <a href="mailto:[REPLACE_WITH_YOUR_CONTACT_EMAIL]">[REPLACE_WITH_YOUR_CONTACT_EMAIL]</a></li>
+        <li><strong>App package:</strong> <code>com.stylesnapai.app</code></li>
+      </ul>
+      <p class="callout">
+        Replace the placeholder email above with the address you want to publish on the Play Store listing
+        (it will be visible to users and required by Google).
+      </p>
+    </section>
+
+    <footer class="note">
+      &copy; 2026 StyleSnap. All rights reserved. &middot;
+      <a href="#who" style="color: var(--ink-mute);">Back to top</a>
+    </footer>
+  </main>
+</body>
+</html>
